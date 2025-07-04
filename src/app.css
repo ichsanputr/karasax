@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+
+* {
+    font-family: 'Figtree', sans-serif;
+}
+
+@theme {
+  /* GitHub-inspired color system */
+  --color-primary: #0969da;
+  --color-primary-hover: #1a7f37;
+  --color-primary-muted: #ddf4d8;
+  --color-primary-subtle: #dafbe1;
+  
+  --color-neutral: #24292f;
+  --color-neutral-muted: #656d76;
+  --color-neutral-subtle: #f6f8fa;
+  --color-neutral-emphasis: #0969da;
+  
+  --color-success: #1a7f37;
+  --color-success-muted: #ddf4d8;
+  --color-success-subtle: #dafbe1;
+  
+  --color-attention: #9a6700;
+  --color-attention-muted: #fae17d;
+  --color-attention-subtle: #fff8c5;
+  
+  --color-danger: #cf222e;
+  --color-danger-muted: #ffebe9;
+  --color-danger-subtle: #ff8182;
+  
+  --color-severe: #a40e26;
+  --color-severe-muted: #ff8182;
+  --color-severe-subtle: #ffebe9;
+  
+  --color-done: #8250df;
+  --color-done-muted: #fbefff;
+  --color-done-subtle: #f3f0ff;
+  
+  --color-sponsors: #db61a2;
+  --color-sponsors-muted: #fef7f0;
+  --color-sponsors-subtle: #fef0c7;
+  
+  /* Border colors */
+  --color-border-default: #d0d7de;
+  --color-border-muted: #d0d7de;
+  --color-border-subtle: #d0d7de;
+  --color-border-inverse: #656d76;
+  
+  /* Background colors */
+  --color-canvas-default: #ffffff;
+  --color-canvas-overlay: #ffffff;
+  --color-canvas-inset: #f6f8fa;
+  --color-canvas-subtle: #f6f8fa;
+  
+  /* Shadow system */
+  --shadow-resting: 0 1px 3px 0 rgba(1, 4, 9, 0.04);
+  --shadow-raised: 0 1px 3px 0 rgba(1, 4, 9, 0.04), 0 8px 24px 0 rgba(1, 4, 9, 0.12);
+  --shadow-overlay: 0 1px 3px 0 rgba(1, 4, 9, 0.04), 0 20px 25px -5px rgba(1, 4, 9, 0.1), 0 8px 10px -6px rgba(1, 4, 9, 0.1);
+  --shadow-highlight: 0 1px 0 0 rgba(1, 4, 9, 0.04) inset;
+  --shadow-inset: 0 1px 0 0 rgba(1, 4, 9, 0.04) inset;
+  
+  /* Typography */
+  --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-border-default);
+  }
+  
+  .btn-primary:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  
+  .btn-secondary {
+    background-color: var(--color-canvas-default);
+    color: var(--color-neutral);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--color-canvas-subtle);
+    border-color: var(--color-border-default);
+  }
+  
+  .btn-secondary:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  
+  .card {
+    background-color: var(--color-canvas-default);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-resting);
+    transition: all 0.2s ease;
+  }
+  
+  .card:hover {
+    box-shadow: var(--shadow-raised);
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--color-canvas-subtle) 0%, var(--color-canvas-default) 100%);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-primary: #58a6ff;
+    --color-primary-hover: #1f6feb;
+    --color-primary-muted: #21262d;
+    --color-primary-subtle: #1f6feb;
+    
+    --color-neutral: #f0f6fc;
+    --color-neutral-muted: #7d8590;
+    --color-neutral-subtle: #161b22;
+    --color-neutral-emphasis: #58a6ff;
+    
+    --color-canvas-default: #0d1117;
+    --color-canvas-overlay: #161b22;
+    --color-canvas-inset: #010409;
+    --color-canvas-subtle: #161b22;
+    
+    --color-border-default: #30363d;
+    --color-border-muted: #21262d;
+    --color-border-subtle: #21262d;
+  }
+}
