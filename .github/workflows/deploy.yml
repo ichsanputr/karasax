@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'pnpm'
+          cache: 'pnpm'  # Enables pnpm cache
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -43,7 +43,7 @@ jobs:
       - name: Upload static site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
+          path: build  # match output dir in svelte.config.js
 
   deploy:
     needs: build
