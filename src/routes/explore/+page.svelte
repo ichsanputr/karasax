@@ -1,5 +1,7 @@
 <script lang="ts">
 import { PinContainer } from '$lib/components/ui/ThreeDPin';
+import { Footer } from '$lib';
+import autoAnimate from '@formkit/auto-animate';
 </script>
 
 <svelte:head>
@@ -47,4 +49,6 @@ import { PinContainer } from '$lib/components/ui/ThreeDPin';
 			</div>
 		</div>
 	</div>
-</section> 
+</section>
+
+<Footer /> 

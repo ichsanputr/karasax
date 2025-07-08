@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { autoAnimate } from '@formkit/auto-animate';
+	import autoAnimate from '@formkit/auto-animate';
 	import { ArrowRight, Plus, X, Check } from 'lucide-svelte';
+	import { Footer } from '$lib';
 
 	// Dynamic list example
 	let fruits = ['🍎 Apple', '🍌 Banana', '🍒 Cherry', '🍊 Orange', '🍇 Grape'];
@@ -320,4 +321,6 @@
 			transform: translateY(-20px);
 		}
 	}
-</style> 
+</style>
+
+<Footer /> 

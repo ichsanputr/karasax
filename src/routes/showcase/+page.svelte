@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { PinContainer } from '$lib/components/ui/ThreeDPin';
+	import { Footer } from '$lib';
 </script>
 
 <svelte:head>

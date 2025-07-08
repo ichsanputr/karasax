@@ -3,17 +3,17 @@
 	import { ArrowRight } from 'lucide-svelte';
 	import { BackgroundBeams } from '$lib';
 
-	export let badge = "✨ Welcome to XTRACT";
-	export let title = "Modern Automation for";
-	export let highlightText = "Your Business";
-	export let description = "Beautiful, animated Svelte components and templates. Build, automate, and scale with ease using the latest in UI and AI.";
-	export let ctaText = "Get Started for free";
-	export let ctaLink = "#how-it-works";
+	export let badge = "✨ Welcome to Karasax";
+	export let title = "Financial Freedom for";
+	export let highlightText = "Your Future";
+	export let description = "Smart budgeting, investment tracking, and automated insights. Take control of your finances and build wealth with confidence.";
+	export let ctaText = "Start Now";
+	export let ctaLink = "#features";
 	export let showCta = true;
 </script>
 
 
-<section id="hero" class="relative mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center min-h-[70vh] py-12 md:py-20 bg-slate-950 dark:bg-black overflow-hidden">
+<section id="hero" class="relative mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center min-h-[70vh] md:py-[10rem] bg-slate-950 dark:bg-black overflow-hidden">
 	<!-- Background Box -->
 	<BackgroundBeams />
 	

@@ -1,42 +1,47 @@
 <script lang="ts">
 	export let companyName = "XTRACT";
-	export let companyDescription = "Xtract – Automate Smarter, Optimize Faster, and Grow Stronger.";
+	export let companyDescription =
+		"Xtract – Automate Smarter, Optimize Faster, and Grow Stronger.";
 	export let socialLinks = [
 		{ name: "Instagram", url: "#" },
 		{ name: "Facebook", url: "#" },
 		{ name: "LinkedIn", url: "#" },
-		{ name: "Twitter", url: "#" }
+		{ name: "Twitter", url: "#" },
 	];
 	export let links = [
 		{ name: "Services", url: "#" },
 		{ name: "Process", url: "#" },
 		{ name: "Case studies", url: "#" },
 		{ name: "Benefits", url: "#" },
-		{ name: "Pricing", url: "#" }
+		{ name: "Pricing", url: "#" },
 	];
 	export let pages = [
 		{ name: "Home", url: "#" },
 		{ name: "About", url: "#" },
 		{ name: "Blog", url: "#" },
 		{ name: "Contact", url: "#" },
-		{ name: "404", url: "#" }
+		{ name: "404", url: "#" },
 	];
 	export let newsletterTitle = "Newsletter";
-	export let newsletterDescription = "Stay updated with our latest AI automation insights.";
+	export let newsletterDescription =
+		"Stay updated with our latest AI automation insights.";
 	export let copyrightText = "© All right reserved";
 	export let backgroundColor = "var(--color-canvas-inset)";
 
-	let email = '';
+	let email = "";
 
 	function handleNewsletterSubmit() {
 		if (email) {
-			console.log('Newsletter subscription for:', email);
-			email = '';
+			console.log("Newsletter subscription for:", email);
+			email = "";
 		}
 	}
 </script>
 
-<footer class="py-12" style="background-color: {backgroundColor}; color: var(--color-neutral);">
+<footer
+	class="py-12"
+	style="background-color: {backgroundColor}; color: var(--color-neutral);"
+>
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="grid md:grid-cols-4 gap-8">
 			<!-- Company Info -->
@@ -57,7 +62,7 @@
 					{/each}
 				</div>
 			</div>
-			
+
 			<!-- Links -->
 			<div>
 				<h4 class="font-semibold mb-4">Links</h4>
@@ -73,7 +78,7 @@
 					{/each}
 				</div>
 			</div>
-			
+
 			<!-- Pages -->
 			<div>
 				<h4 class="font-semibold mb-4">Pages</h4>
@@ -89,14 +94,17 @@
 					{/each}
 				</div>
 			</div>
-			
+
 			<!-- Newsletter -->
 			<div>
 				<h4 class="font-semibold mb-4">{newsletterTitle}</h4>
 				<p class="mb-4" style="color: var(--color-neutral-muted);">
 					{newsletterDescription}
 				</p>
-				<form class="flex" on:submit|preventDefault={handleNewsletterSubmit}>
+				<form
+					class="flex"
+					on:submit|preventDefault={handleNewsletterSubmit}
+				>
 					<input
 						type="email"
 						bind:value={email}
@@ -114,7 +122,7 @@
 				</form>
 			</div>
 		</div>
-		
+
 		<!-- Copyright -->
 		<div
 			class="border-t mt-8 pt-8 text-center"
@@ -123,4 +131,4 @@
 			<p>{copyrightText}</p>
 		</div>
 	</div>
-</footer> 
+</footer>
