@@ -1,8 +1,9 @@
 <script>
 	import "../app.css";
-	import { Header } from "$lib";
+	import { Header, Footer } from "$lib";
 	import { page } from "$app/stores";
 </script>
 
 <Header currentPath={$page.url.pathname} />
 <slot />
+<Footer />

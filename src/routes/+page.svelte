@@ -39,7 +39,6 @@
 <CallToAction />
 <SuccessStories />
 <Team />
-<Footer />
 
 <style>
 	/* Additional hover effects for 3D cards */
