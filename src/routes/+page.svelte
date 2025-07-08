@@ -11,7 +11,6 @@
 		CallToAction,
 		SuccessStories,
 		Team,
-		Footer,
 	} from "$lib";
 
 	// Scroll utility function

@@ -53,7 +53,7 @@
 	export let backgroundColor = "rgb(2 6 23)";
 </script>
 
-<section class="py-10 relative overflow-hidden" style="background-color: {backgroundColor};">
+<section class="pt-10 relative overflow-hidden" style="background-color: {backgroundColor};">
 	<!-- Background decoration -->
 	<div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
 	<div class="absolute inset-0 bg-grid-white/[0.02] bg-grid"></div>
@@ -75,7 +75,7 @@
 	</div>
 
 	<!-- Infinite Moving Cards -->
-	<div class="relative mb-10">
+	<div class="relative mb-0">
 		<div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-transparent to-slate-950 z-10 pointer-events-none"></div>
 		<InfiniteMovingCards 
 			items={testimonials} 

@@ -9,6 +9,7 @@ export { GridAndDotBackgrounds } from './components/ui/GridAndDotBackgrounds';
 export { GoogleGeminiEffect } from './components/ui/GoogleGeminiEffect';
 export { BackgroundGradient } from './components/ui/BackgroundGradient';
 export { InfiniteMovingCards } from './components/ui/InfiniteMovingCards';
+export { WavyBackground } from './components/ui/WavyBackground';
 
 // Section components
 export { default as Features } from './components/sections/Features.svelte';

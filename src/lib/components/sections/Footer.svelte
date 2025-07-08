@@ -13,7 +13,6 @@
 		{ name: "Process", url: "#" },
 		{ name: "Case studies", url: "#" },
 		{ name: "Benefits", url: "#" },
-		{ name: "Pricing", url: "#" },
 	];
 	export let pages = [
 		{ name: "Home", url: "#" },
@@ -25,7 +24,7 @@
 	export let newsletterTitle = "Newsletter";
 	export let newsletterDescription =
 		"Stay updated with our latest AI automation insights.";
-	export let copyrightText = "© All right reserved";
+	export let copyrightText = "Karasax © Built by Ichsanputr";
 	export let backgroundColor = "var(--color-canvas-inset)";
 
 	let email = "";
@@ -39,11 +38,11 @@
 </script>
 
 <footer
-	class="py-12"
+	class="pt-10 pb-6"
 	style="background-color: {backgroundColor}; color: var(--color-neutral);"
 >
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="grid md:grid-cols-4 gap-8">
+		<div class="grid md:grid-cols-3 gap-8 pb-8">
 			<!-- Company Info -->
 			<div>
 				<h3 class="text-2xl font-bold mb-4">{companyName}</h3>
@@ -79,22 +78,6 @@
 				</div>
 			</div>
 
-			<!-- Pages -->
-			<div>
-				<h4 class="font-semibold mb-4">Pages</h4>
-				<div class="space-y-2">
-					{#each pages as page}
-						<a
-							href={page.url}
-							class="block transition-colors hover:text-neutral"
-							style="color: var(--color-neutral-muted);"
-						>
-							{page.name}
-						</a>
-					{/each}
-				</div>
-			</div>
-
 			<!-- Newsletter -->
 			<div>
 				<h4 class="font-semibold mb-4">{newsletterTitle}</h4>
@@ -125,7 +108,7 @@
 
 		<!-- Copyright -->
 		<div
-			class="border-t mt-8 pt-8 text-center"
+			class="border-t pt-6 text-center"
 			style="border-color: var(--color-border-default); color: var(--color-neutral-muted);"
 		>
 			<p>{copyrightText}</p>

@@ -36,6 +36,8 @@
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.525.0",
 		"mini-svg-data-uri": "^1.4.4",
+		"simplex-noise": "^4.0.3",
+		"svelte-inview": "^4.0.4",
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^3.3.1"
 	}
