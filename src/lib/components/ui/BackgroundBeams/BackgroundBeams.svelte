@@ -102,10 +102,10 @@
 						y2: ['0%', `${93 + Math.random() * 8}%`]
 					}}
 					transition={{
-						duration: Math.random() * 10 + 10,
+						duration: Math.random() * 10 + 5,
 						ease: 'easeInOut',
 						repeat: Infinity,
-						delay: Math.random() * 10
+						delay: index === 0 ? 0 : Math.random() * 2
 					}}
 				>
 					<linearGradient
