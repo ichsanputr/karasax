@@ -247,7 +247,7 @@
 	
 	<div class="container mx-auto max-w-4xl px-4 relative z-10">
 		<BackgroundGradient className="rounded-xl w-full">
-			<div class="bg-slate-900/50 rounded-xl p-8 md:p-12 border border-slate-700/50 backdrop-blur-sm text-center">
+			<div class="bg-slate-900/50 rounded-3xl p-8 md:p-12 border border-slate-700/50 backdrop-blur-sm text-center">
 				<div class="mb-8">
 					<h3 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-br from-neutral-200 to-neutral-500 bg-clip-text text-transparent">
 						Stay Updated
