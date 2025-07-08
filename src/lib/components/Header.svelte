@@ -1,4 +1,6 @@
 <script lang="ts">
+	import autoAnimate from '@formkit/auto-animate';
+
 	export let brand = "KARASAX";
 	export let showMobileMenu = false;
 	export let currentPath = "/";
@@ -71,6 +73,7 @@
 					on:click={toggleMobileMenu} 
 					class="p-2 rounded-lg hover:bg-neutral-800/50 transition-colors"
 					aria-label="Toggle mobile menu"
+					use:autoAnimate
 				>
 					<svg class="w-6 h-6 text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						{#if showMobileMenu}
@@ -84,34 +87,36 @@
 		</div>
 	</div>
 	
-	<!-- Mobile Nav -->
-	{#if showMobileMenu}
-		<div class="md:hidden absolute inset-x-0 top-full z-40 bg-slate-950/95 dark:bg-black/95 backdrop-blur-xl border-b border-neutral-800/50 dark:border-neutral-700/50 shadow-2xl">
-			<div class="flex flex-col py-6 px-4 space-y-3">
-				{#each navItems as nav}
-					<a 
-						href={nav.href} 
-						class="text-lg font-medium text-neutral-300 hover:text-neutral-100 transition-colors py-3 px-4 rounded-lg hover:bg-neutral-800/50"
-						class:active={currentPath === nav.href}
-						on:click={closeMobileMenu}
-					>
-						{nav.label}
-					</a>
-				{/each}
-				
-				<!-- Mobile CTA Button -->
-				<div class="pt-4 border-t border-neutral-800/50">
-					<a 
-						href="#contact" 
-						class="block w-full text-center rounded-lg bg-gradient-to-r from-cyan-500 to-sky-500 px-4 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105"
-						on:click={closeMobileMenu}
-					>
-						Get Started
-					</a>
+	<!-- Mobile Nav Container with AutoAnimate -->
+	<div class="md:hidden" use:autoAnimate>
+		{#if showMobileMenu}
+			<div class="absolute inset-x-0 top-full z-40 bg-slate-950/95 dark:bg-black/95 backdrop-blur-xl border-b border-neutral-800/50 dark:border-neutral-700/50 shadow-2xl">
+				<div class="flex flex-col py-6 px-4 space-y-3" use:autoAnimate>
+					{#each navItems as nav}
+						<a 
+							href={nav.href} 
+							class="text-lg font-medium text-neutral-300 hover:text-neutral-100 transition-colors py-3 px-4 rounded-lg hover:bg-neutral-800/50"
+							class:active={currentPath === nav.href}
+							on:click={closeMobileMenu}
+						>
+							{nav.label}
+						</a>
+					{/each}
+					
+					<!-- Mobile CTA Button -->
+					<div class="pt-4 border-t border-neutral-800/50">
+						<a 
+							href="#contact" 
+							class="block w-full text-center rounded-lg bg-gradient-to-r from-cyan-500 to-sky-500 px-4 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105"
+							on:click={closeMobileMenu}
+						>
+							Get Started
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	{/if}
+		{/if}
+	</div>
 </nav>
 
 <style>

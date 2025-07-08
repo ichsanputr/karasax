@@ -7,7 +7,7 @@
 	} from "$lib/components/ui/ThreeDCardEffect";
 	import Sparkles from "$lib/components/ui/Sparkles/Sparkles.svelte";
 
-	export let title = "Powerful Financial Tools";
+	export let title = "Powerful Financial";
 
 	export let cards = [
 		{
@@ -62,29 +62,28 @@
 	style="background-color: {backgroundColor};"
 >
 	<div class="container mx-auto px-4">
-		<h2
-			class="text-4xl font-bold text-center mb-3 bg-gradient-to-br from-neutral-200 to-neutral-600 bg-clip-text text-transparent"
-		>
-			{title}
-		</h2>
-		<div class="relative h-10 w-[40rem] mx-auto">
-			<!-- Gradients -->
+		<div class="relative mb-10 h-10 w-full sm:w-[40rem] mx-auto">
+			<h2
+				class="text-4xl font-bold text-center mb-3 bg-gradient-to-br from-neutral-200 to-neutral-600 bg-clip-text text-transparent"
+			>
+				{title}
+			</h2>
 			<div
-				class="absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm"
+				class="absolute hidden sm:block inset-x-20 bottom-2 h-[10px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm"
 			/>
 			<div
-				class="absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent"
+				class="absolute hidden sm:block inset-x-20 -bottom-2 h-[1px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent"
 			/>
 			<div
-				class="absolute inset-x-60 top-0 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm"
+				class="absolute hidden sm:block inset-x-60 -bottom-2 h-[6px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm"
 			/>
 			<div
-				class="absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent"
+				class="absolute  hidden sm:block inset-x-60 -bottom-2 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent"
 			/>
 
 			<!-- Radial Gradient to prevent sharp edges -->
 			<div
-				class="absolute inset-0 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"
+				class="absolute hidden sm:block inset-0 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"
 			></div>
 		</div>
 
