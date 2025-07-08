@@ -36,9 +36,9 @@
 <Features />
 <MainFeatures />
 <GoogleGeminiSection />
-<CallToAction />
 <SuccessStories />
 <Team />
+<CallToAction />
 
 <style>
 	/* Additional hover effects for 3D cards */

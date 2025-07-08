@@ -5,7 +5,7 @@ export { default as Header } from './components/Header.svelte';
 // Aceternity components
 export { AnimatedTooltip } from './components/ui/AnimatedTooltip';
 export { BackgroundBeams } from './components/ui/BackgroundBeams';
-export { GridAndDotBackgrounds, GridAndDotBackgroundsSmallGrid, DotBackground } from './components/ui/GridAndDotBackgrounds';
+export { GridAndDotBackgrounds } from './components/ui/GridAndDotBackgrounds';
 export { GoogleGeminiEffect } from './components/ui/GoogleGeminiEffect';
 export { BackgroundGradient } from './components/ui/BackgroundGradient';
 export { InfiniteMovingCards } from './components/ui/InfiniteMovingCards';

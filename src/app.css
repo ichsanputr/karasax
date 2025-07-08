@@ -78,6 +78,58 @@
   --radius-xl: 1rem;
 }
 
+@layer utilities {
+  /* Grid Background Utilities */
+  .bg-grid-black {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='black'><path d='M0 .5H31.5V32'/></svg>");
+  }
+  
+  .bg-grid-white {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='white'><path d='M0 .5H31.5V32'/></svg>");
+  }
+  
+  .bg-grid-gray {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='gray'><path d='M0 .5H31.5V32'/></svg>");
+  }
+
+  .bg-grid-small-black {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none' stroke='black'><path d='M0 .5H31.5V32'/></svg>");
+  }
+  
+  .bg-grid-small-white {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none' stroke='white'><path d='M0 .5H31.5V32'/></svg>");
+  }
+  
+  .bg-grid-small-gray {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none' stroke='gray'><path d='M0 .5H31.5V32'/></svg>");
+  }
+
+  /* Dot Background Utilities */
+  .bg-dot-black {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'><circle fill='black' cx='16' cy='16' r='1.5'/></svg>");
+  }
+  
+  .bg-dot-white {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'><circle fill='white' cx='16' cy='16' r='1.5'/></svg>");
+  }
+  
+  .bg-dot-gray {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'><circle fill='gray' cx='16' cy='16' r='1.5'/></svg>");
+  }
+
+  .bg-dot-small-black {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none'><circle fill='black' cx='16' cy='16' r='1'/></svg>");
+  }
+  
+  .bg-dot-small-white {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none'><circle fill='white' cx='16' cy='16' r='1'/></svg>");
+  }
+  
+  .bg-dot-small-gray {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none'><circle fill='gray' cx='16' cy='16' r='1'/></svg>");
+  }
+}
+
 @layer components {
   .btn-primary {
     background-color: var(--color-primary);
