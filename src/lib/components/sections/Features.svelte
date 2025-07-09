@@ -52,7 +52,7 @@
 		<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto" use:autoAnimate>
 			{#each features as feature}
 				<BackgroundGradient className="rounded-xl h-full">
-					<div class="bg-slate-900/50 h-full rounded-xl text-center relative p-8 border border-slate-700/50 backdrop-blur-sm group hover:bg-slate-900/70 transition-all duration-300">
+					<div class="bg-slate-900/50 h-full rounded-3xl text-center relative p-8 border border-slate-700/50 backdrop-blur-sm group hover:bg-slate-900/70 transition-all duration-300">
 						<!-- Icon -->
 						<div
 							class="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center border border-slate-600/50 group-hover:border-cyan-500/30 transition-all duration-300"
