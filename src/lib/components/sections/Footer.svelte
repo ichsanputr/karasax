@@ -41,7 +41,7 @@
 	style="background-color: {backgroundColor}; color: var(--color-neutral);"
 >
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="grid md:grid-cols-4 gap-8 pb-8">
+		<div class="grid md:grid-cols-3 gap-8 pb-8">
 			<!-- Company Info -->
 			<div class="col-span-2 sm:col-span-1">
 				<h3 class="text-2xl font-bold mb-4">{companyName}</h3>

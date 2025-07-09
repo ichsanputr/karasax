@@ -10,7 +10,7 @@
 		{ label: 'Home', href: '/' },
 		{ label: 'Blog', href: '/blog' },
 		{ label: 'Showcase', href: '/showcase' },
-		{ label: 'Labs', href: '/labs' },
+		{ label: 'Working', href: '/working' },
 		{ label: 'AutoAnimate', href: '/auto-animate-demo' },
 		{ label: 'Explore', href: '/explore' }
 	];

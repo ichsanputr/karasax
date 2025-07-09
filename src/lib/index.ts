@@ -10,6 +10,7 @@ export { GoogleGeminiEffect } from './components/ui/GoogleGeminiEffect';
 export { BackgroundGradient } from './components/ui/BackgroundGradient';
 export { InfiniteMovingCards } from './components/ui/InfiniteMovingCards';
 export { WavyBackground } from './components/ui/WavyBackground';
+export { Tabs, FadeInDiv } from './components/ui/Tabs';
 
 // Section components
 export { default as Features } from './components/sections/Features.svelte';
