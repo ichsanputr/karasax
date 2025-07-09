@@ -86,7 +86,7 @@
 					d={path}
 					stroke={`url(#linearGradient-${index})`}
 					stroke-opacity="0.4"
-					stroke-width="0.5"
+					stroke-width="2"
 				></path>
 			</Motion>
 		{/each}

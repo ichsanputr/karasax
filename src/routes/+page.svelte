@@ -11,6 +11,7 @@
 		CallToAction,
 		SuccessStories,
 		Team,
+		InteractiveFeatures,
 	} from "$lib";
 
 	// Scroll utility function
@@ -33,6 +34,7 @@
 <!-- All sections now as components -->
 <Hero />
 <Features />
+<InteractiveFeatures />
 <MainFeatures />
 <GoogleGeminiSection />
 <SuccessStories />

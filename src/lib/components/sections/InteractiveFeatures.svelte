@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { StickyScrollReveal } from '$lib/components/ui/StickyScrollReveal';
-	import { Footer } from '$lib';
+	import { StickyScrollReveal } from "$lib/components/ui/StickyScrollReveal";
 
-	const content = [
+	const stickyContent = [
 		{
 			title: 'Collaborative Editing',
 			description:
@@ -19,47 +18,63 @@
 				"Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions."
 		},
 		{
-			title: 'Running out of content',
+			title: 'Advanced Analytics',
 			description:
-				"Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions."
+				"Get deep insights into your workflow with our advanced analytics dashboard. Track performance metrics, identify bottlenecks, and optimize your processes. Make data-driven decisions to improve efficiency and achieve better results."
+		},
+		{
+			title: 'Smart Automation',
+			description:
+				"Automate repetitive tasks and workflows with our intelligent automation engine. Set up triggers, create custom workflows, and let our AI handle the mundane while you focus on what matters most. Save hours every day with smart automation."
+		},
+		{
+			title: 'Seamless Integration',
+			description:
+				"Connect with your favorite tools and platforms effortlessly. Our extensive API and integration library works with over 100+ popular services. From Slack to Salesforce, everything works together seamlessly."
+		},
+		{
+			title: 'Security & Compliance',
+			description:
+				"Enterprise-grade security with SOC 2 compliance, end-to-end encryption, and advanced access controls. Your data is protected with bank-level security standards, ensuring peace of mind for your organization."
+		},
+		{
+			title: 'Mobile Optimization',
+			description:
+				"Work from anywhere with our fully responsive mobile experience. Access all features on your phone or tablet with the same powerful functionality. Stay productive whether you're in the office or on the go."
 		}
 	];
 </script>
 
-<svelte:head>
-	<title>Explore More - KARASAX</title>
-	<meta name="description" content="Explore more interactive demos and creative Svelte features." />
-</svelte:head>
-
-<section class="explore-section">
-	<!-- Background gradient -->
+<section class="interactive-features-section">
 	<div class="background-gradient"></div>
 	
-	<div class="container mx-auto px-4 relative pt-10 z-10">
-		<div class="text-center mb-16">			
+	<div class="container mx-auto px-4 relative z-10">
+		<div class="text-center mb-16">
+			<div class="badge">
+				<span class="badge-dot"></span>
+				Interactive
+			</div>
+			
 			<h2 class="main-title">
-				Explore More
+				Interactive Features
 			</h2>
 			<p class="subtitle">
-				Discover our interactive components with stunning visuals and smooth animations
+				Discover our powerful collaboration tools and real-time capabilities
 			</p>
 		</div>
 		
 		<div class="p-10">
-			<StickyScrollReveal {content} />
+			<StickyScrollReveal content={stickyContent} />
 		</div>
 	</div>
 </section>
 
-<Footer />
-
 <style>
-	.explore-section {
+	.interactive-features-section {
 		position: relative;
 		padding: 5rem 0;
 		background-color: #0A1226;
 		overflow: hidden;
-		overflow-y: hidden;
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -109,7 +124,9 @@
 	.subtitle {
 		font-size: 1.125rem;
 		color: rgb(156, 163, 175);
+		max-width: 800px;
 		margin: 0 auto;
+		line-height: 1.6;
 	}
 
 	@media (max-width: 768px) {

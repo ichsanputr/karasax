@@ -20,3 +20,16 @@ export { default as SuccessStories } from './components/sections/SuccessStories.
 export { default as Team } from './components/sections/Team.svelte';
 export { default as GoogleGeminiSection } from './components/sections/GoogleGeminiSection.svelte';
 export { default as Footer } from './components/sections/Footer.svelte';
+export { default as InteractiveFeatures } from './components/sections/InteractiveFeatures.svelte';
+
+// UI Components
+export * from './components/ui/AnimatedTooltip';
+export * from './components/ui/BackgroundBeams';
+export * from './components/ui/BackgroundGradient';
+export * from './components/ui/GoogleGeminiEffect';
+export * from './components/ui/GridAndDotBackgrounds';
+export * from './components/ui/InfiniteMovingCards';
+export * from './components/ui/ThreeDCardEffect';
+export * from './components/ui/ThreeDPin';
+export * from './components/ui/Tabs';
+export * from './components/ui/StickyScrollReveal';
