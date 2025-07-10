@@ -11,7 +11,7 @@
 		{ label: 'Blog', href: '/blog' },
 		{ label: 'Showcase', href: '/showcase' },
 		{ label: 'Working', href: '/working' },
-		{ label: 'AutoAnimate', href: '/auto-animate-demo' },
+		{ label: 'Experience', href: '/experience' },
 		{ label: 'Explore', href: '/explore' }
 	];
 

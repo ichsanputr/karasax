@@ -11,6 +11,7 @@ export { BackgroundGradient } from './components/ui/BackgroundGradient';
 export { InfiniteMovingCards } from './components/ui/InfiniteMovingCards';
 export { WavyBackground } from './components/ui/WavyBackground';
 export { Tabs, FadeInDiv } from './components/ui/Tabs';
+export { HeroParallax, ProductCard } from './components/ui/HeroParallax';
 
 // Section components
 export { default as Features } from './components/sections/Features.svelte';
@@ -33,3 +34,4 @@ export * from './components/ui/ThreeDCardEffect';
 export * from './components/ui/ThreeDPin';
 export * from './components/ui/Tabs';
 export * from './components/ui/StickyScrollReveal';
+export * from './components/ui/HeroParallax';
