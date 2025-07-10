@@ -70,11 +70,33 @@
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.8, delay: 0.4 }}
 		>
-			<p
-				class="text-balance text-lg md:text-xl tracking-tight text-neutral-400 mx-auto leading-relaxed"
-			>
-				{description}
-			</p>
+			<div class="font-bold text-balance text-lg md:text-xl tracking-tight text-neutral-400 mx-auto leading-relaxed">
+				<div class="mt-4 sm:max-w-1/2 mx-auto">
+					<div class="text-lg leading-snug tracking-wide">
+						<Motion let:motion custom={0} variants={{
+							visible: (i) => ({
+								opacity: 1,
+								transition: { delay: i * 0.2, duration: 2 }
+							}),
+							hidden: { opacity: 0 }
+						}} initial="hidden" animate={'visible'}>
+							<div use:motion>
+								{#each description.split(' ') as word, idx (`${word}${idx}`)}
+									<Motion let:motion variants={{
+										visible: (i) => ({
+											opacity: 1,
+											transition: { delay: i * 0.2, duration: 2 }
+										}),
+										hidden: { opacity: 0 }
+									}} custom={idx + 1} initial="hidden" animate={'visible'}>
+										<span use:motion>{word} </span>
+									</Motion>
+								{/each}
+							</div>
+						</Motion>
+					</div>
+				</div>
+			</div>
 		</Motion>
 
 		{#if showCta}
